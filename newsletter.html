@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter | FontDale Mall</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Font<span>Dale</span></a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="newsletter.html" class="active">Newsletter</a></li>
+                </ul>
+                <div class="menu-toggle">☰</div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header" style="background: var(--bg-light); text-align: center; padding: 4rem 0;">
+            <div class="container">
+                <h1 style="font-size: 3rem; color: var(--primary);">Unfiltered, Explosive Updates</h1>
+                <p style="color: var(--text-muted); max-width: 700px; margin: 1rem auto 0;">Stay locked in with FontDale. Subscribe now to ensure you are the first to know when our premium lifestyle drops. Warning: Content may cause immediate, overwhelming satisfaction.</p>
+            </div>
+        </section>
+
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="form-container">
+                    <form id="newsletter-form" novalidate>
+                        <div class="form-group">
+                            <label for="name">Full Name (Legal Identity of the Releaser)</label>
+                            <input type="text" id="name" name="name" placeholder="e.g., Ambatukam Omaygot">
+                            <div class="error-message" id="name-error"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address (Where the stream of updates flows)</label>
+                            <input type="email" id="email" name="email" placeholder="ambatublow@domain.com">
+                            <div class="error-message" id="email-error"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number (For urgent 'Omaygot' alerts)</label>
+                            <input type="tel" id="phone" name="phone" placeholder="e.g., 081234567890">
+                            <div class="error-message" id="phone-error"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="topic">Chamber of Core Interest</label>
+                            <select id="topic" name="topic">
+                                <option value="">Select your breaking point...</option>
+                                <option value="fashion">Global Fashion (Style that makes you weep)</option>
+                                <option value="dining">Gourmet Dining (Flavors that cause a breakthrough)</option>
+                                <option value="lifestyle">Urban Lifestyle (Aggressive, hands-on relaxation)</option>
+                                <option value="events">Private Events (Exclusive cllimatic gatherings)</option>
+                            </select>
+                            <div class="error-message" id="topic-error"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Update Frequency (How often do you want to explode?)</label>
+                            <div class="radio-group">
+                                <label style="font-weight: 400;"><input type="radio" name="frequency" value="daily"> Non-Stop Streams (Daily)</label>
+                                <label style="font-weight: 400;"><input type="radio" name="frequency" value="weekly"> Controlled Releases (Weekly)</label>
+                                <label style="font-weight: 400;"><input type="radio" name="frequency" value="monthly"> Heavy Finishes (Monthly)</label>
+                            </div>
+                            <div class="error-message" id="frequency-error"></div>
+                        </div>
+
+                        <div class="form-group" style="margin-top: 2rem;">
+                            <button type="submit" class="btn" style="width: 100%;">Yes, Ambatublow! (Subscribe Now)</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="color: var(--white); margin-bottom: 1.5rem; display: block;">Font<span>Dale</span></a>
+                    <p>Envisioned by Franz Diego (DODODABIRD), FontDale is a premier lifestyle destination where contemporary design meets high-quality experiences.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="directory.html">Directory</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="newsletter.html">Newsletter</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Arcadia Circle, Metropolitan District</a></li>
+                        <li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
+                        <li><a href="mailto:concierge@fontdale.com">concierge@fontdale.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 BY DODODABIRD</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
